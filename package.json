@@ -5,7 +5,8 @@
   "repository": "https://github.com/sharynjs/sharyn-util",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "jest"
   },
   "devDependencies": {
     "jest": "24.9.0"
