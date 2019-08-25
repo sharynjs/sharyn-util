@@ -1,6 +1,4 @@
-const swit = require('./swit')
-const wait = require('./wait')
-
-const modules = { swit, wait }
-
-module.exports = modules
+module.exports = {
+  swit: require('./swit'),
+  wait: require('./wait'),
+}
