@@ -1,2 +1,5 @@
+export { default as exists } from './exists'
+export { default as run } from './run'
 export { default as swit } from './swit'
+export { default as toggle } from './toggle'
 export { default as wait } from './wait'
