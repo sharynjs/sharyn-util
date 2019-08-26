@@ -51,6 +51,24 @@ setGlobal('store', store)
 getGlobal('store') // store
 ```
 
+## ifs
+
+[`ifs`](https://github.com/sharynjs/sharyn-util/blob/master/ifs.md) is a function that does an `if` / `else if` / `else` chain. Since it doesn't have the rigid structure of `if` and `else` statements, you can inline if anywhere in your code
+
+```js
+ifs(
+  [
+    [value < 10, 'green'],
+    [value < 100, 'yellow'],
+    [value < 1000, 'orange'],
+    [value < 10000, 'red'],
+  ],
+  'black'
+)
+```
+
+Make sure you read the [documentation]((https://github.com/sharynjs/sharyn-util/blob/master/ifs.md)) to avoid side-effects.
+
 ## run
 
 [`run`](https://github.com/sharynjs/sharyn-util/blob/master/run.md) lets you run some imperative code anywhere. Useful for debugging in declarative code.
