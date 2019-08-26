@@ -1,11 +1,11 @@
 module.exports = {
-  cond: require('./cond'),
   getGlobal: require('./global').getGlobal,
   setGlobal: require('./global').setGlobal,
   getAllGlobal: require('./global').getAllGlobal,
   deleteGlobal: require('./global').deleteGlobal,
   clearGlobal: require('./global').clearGlobal,
   exists: require('./exists'),
+  ifs: require('./ifs'),
   isDefined: require('./isDefined'),
   isEither: require('./isEither'),
   run: require('./run'),

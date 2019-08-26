@@ -1,4 +1,4 @@
-export { default as cond } from './cond'
+export { default as ifs } from './ifs'
 export { default as exists } from './exists'
 export { getGlobal } from './global'
 export { setGlobal } from './global'
