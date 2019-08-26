@@ -1,4 +1,4 @@
-# cycle
+# 🌹 cycle
 
 **`cycle`** cycles through a set of values, and defaults to the first one.
 
@@ -15,4 +15,4 @@ Deep equality is supported:
 cycle({ a: 2 }, { a: 1 }, { a: 2 }, { a: 3 }) // { a: 3 }
 ```
 
-`cycle` is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md).
+**`cycle`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md).

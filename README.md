@@ -20,6 +20,27 @@ defined(undefined) // false
 defined('abc') // true
 ```
 
+## either
+
+[`either`](https://github.com/sharynjs/sharyn-util/blob/master/either.md) returns `true` if the first argument matches any of the other.
+
+```js
+const something = 'bar'
+either(something, 'foo', 'bar', 'baz') // true
+```
+
+## global
+
+[`global`](https://github.com/sharynjs/sharyn-util/blob/master/global.md) is a set of functions to create and access global variables.
+
+```js
+// In file A
+setGlobal('store', store)
+
+// In file B
+getGlobal('store') // store
+```
+
 ## ifs
 
 `ifs`
