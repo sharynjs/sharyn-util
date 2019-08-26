@@ -15,4 +15,4 @@ defined({})    // true
 defined(NaN)   // true
 ```
 
-**`defined`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md).
+**`defined`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md)

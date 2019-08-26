@@ -40,4 +40,4 @@ And use it anywhere in your application, outside of React components for instanc
 getGlobal('store').getState()
 ```
 
-**`global`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md).
+**`global`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md)

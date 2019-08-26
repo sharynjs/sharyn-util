@@ -29,6 +29,16 @@ const something = 'bar'
 either(something, 'foo', 'bar', 'baz') // true
 ```
 
+## exists
+
+[`exists`](https://github.com/sharynjs/sharyn-util/blob/master/exists.md) returns `true` if its argument is not `null` or `undefined`.
+
+```js
+exists('a')       // true
+exists(null)      // false
+exists(undefined) // false
+```
+
 ## global
 
 [`global`](https://github.com/sharynjs/sharyn-util/blob/master/global.md) is a set of functions to create and access global variables.

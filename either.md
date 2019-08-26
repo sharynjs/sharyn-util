@@ -22,4 +22,4 @@ if (either(something, 'foo', 'bar', 'baz'))
 either(obj, { a: 1 }, { a: 2 })
 ```
 
-**`either`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md).
+**`either`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md)
