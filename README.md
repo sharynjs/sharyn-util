@@ -51,22 +51,16 @@ setGlobal('store', store)
 getGlobal('store') // store
 ```
 
-## ifs
+## run
 
-`ifs`
-
-```js
-
-```
+[`run`](https://github.com/sharynjs/sharyn-util/blob/master/run.md) lets you run some imperative code anywhere. Useful for debugging in declarative code.
 
 ```js
-ifs(
-  [
-    [val < 10, 'green'],
-    [val < 100, 'yellow'],
-    [val < 1000, 'orange'],
-    [val < 10000, 'red'],
-  ],
-  'black'
+const Cmp = ({ something }) => (
+  <div data-something={run(() => {
+    console.log(something)
+    doWhatever()
+    return something
+  })}></div>
 )
 ```

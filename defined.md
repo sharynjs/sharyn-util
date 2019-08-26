@@ -3,7 +3,8 @@
 **`defined`** returns `true` if the passed value is not `undefined`.
 
 ```js
-import defined from '@sharyn/util/defined' // or import { defined } from '@sharyn/util'
+import defined from '@sharyn/util/defined'
+// or import { defined } from '@sharyn/util'
 
 defined(undefined) // false
 defined(void 0)    // false

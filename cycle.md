@@ -3,7 +3,8 @@
 **`cycle`** returns the next value of a set of values, and defaults to the first one.
 
 ```js
-import cycle from '@sharyn/util/cycle' // or import { cycle } from '@sharyn/util'
+import cycle from '@sharyn/util/cycle'
+// or import { cycle } from '@sharyn/util'
 
 cycle(current, 'a', 'b', 'c') // if current === 'a', returns 'b'
 cycle(current, 'a', 'b', 'c') // if current === 'b', returns 'c'
