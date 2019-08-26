@@ -1,1 +1,1 @@
-export default function toggle(value: any, option1: any, option2: any, isStrict?: boolean): any
+export default function toggle(currentValue: any, ...values: any[]): any

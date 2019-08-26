@@ -1,4 +1,5 @@
 module.exports = {
+  cycle: require('./cycle'),
   defined: require('./defined'),
   either: require('./either'),
   exists: require('./exists'),
