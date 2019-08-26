@@ -1,5 +1,14 @@
 # 🌹 @sharyn/util
 
+## between
+
+[`between`](https://github.com/sharynjs/sharyn-util/blob/master/between.md) tests if a numeral value is between two bounds.
+
+```js
+const x = 50
+between(x, 10, 100) // true
+```
+
 ## cycle
 
 [`cycle`](https://github.com/sharynjs/sharyn-util/blob/master/cycle.md) returns the next value of a set of values, and defaults to the first one.
@@ -53,7 +62,7 @@ getGlobal('store') // store
 
 ## ifs
 
-[`ifs`](https://github.com/sharynjs/sharyn-util/blob/master/ifs.md) is a function that does an `if` / `else if` / `else` chain. Since it doesn't have the rigid structure of `if` and `else` statements, you can inline if anywhere in your code
+[`ifs`](https://github.com/sharynjs/sharyn-util/blob/master/ifs.md) is a function that does an `if` / `else if` / `else` chain. Since it doesn't have the rigid structure of `if` and `else` statements, you can inline if anywhere in your code.
 
 ```js
 ifs(

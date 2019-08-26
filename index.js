@@ -1,4 +1,5 @@
 module.exports = {
+  between: require('./between'),
   cycle: require('./cycle'),
   defined: require('./defined'),
   either: require('./either'),

@@ -1,3 +1,4 @@
+export { default as between } from './between'
 export { default as cycle } from './cycle'
 export { default as defined } from './defined'
 export { default as either } from './either'
