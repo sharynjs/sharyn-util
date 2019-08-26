@@ -3,7 +3,7 @@
 **`exists`** returns `true` if its argument is not `null` or `undefined`.
 
 ```js
-import exists from '@sharyn/util/exists'
+import exists from '@sharyn/util/exists' // or import { exists } from '@sharyn/util'
 
 exists('a')  // true
 exists('')   // true

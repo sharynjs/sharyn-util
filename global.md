@@ -6,6 +6,7 @@ The global variables are stored in a simple object (`{}`):
 
 ```js
 import { getGlobal, setGlobal, getAllGlobal, deleteGlobal, clearGlobal } from '@sharyn/util'
+// or import { getGlobal, setGlobal, getAllGlobal, deleteGlobal, clearGlobal } from '@sharyn/util/global'
 
 getAllGlobal() // {}
 

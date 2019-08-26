@@ -13,6 +13,8 @@ if (['foo', 'bar', 'baz'].includes(something))
 By this:
 
 ```js
+import either from '@sharyn/util/either' // or import { either } from '@sharyn/util'
+
 if (either(something, 'foo', 'bar', 'baz'))
 ```
 
