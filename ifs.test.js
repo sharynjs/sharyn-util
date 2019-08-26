@@ -1,21 +1,11 @@
 const ifs = require('./ifs')
 
 test('ifs', () => {
-  expect(ifs([])).toBe(undefined)
-  expect(ifs([], () => 2)).toBe(2)
-  expect(ifs([], 2)).toBe(2)
+  expect(() => ifs()).toThrow()
 
-  expect(ifs([[true, () => 4]])).toBe(4)
-  expect(ifs([[true, 4]])).toBe(4)
-  expect(ifs([[() => true, 4]])).toBe(4)
-  expect(ifs([[() => true, () => 4]])).toBe(4)
-
-  expect(ifs([[false, 5], [true, 6], [false, 7]])).toBe(6)
-  expect(
-    ifs([
-      [() => false, () => 5],
-      [() => true, () => 6],
-      [() => false, () => 7],
-    ])
-  ).toBe(6)
+  expect(ifs([false, 1])).toBe(undefined)
+  expect(ifs([false, 1], [false, 2], [false, 3])).toBe(undefined)
+  expect(ifs([false, 1], [true, 2], [false, 3])).toBe(2)
+  expect(ifs([() => false, 1], [() => true, 2], [() => false, 3])).toBe(2)
+  expect(ifs([false, () => 1], [true, () => 2], [false, () => 3])).toBe(2)
 })

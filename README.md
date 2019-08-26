@@ -57,13 +57,11 @@ getGlobal('store') // store
 
 ```js
 ifs(
-  [
-    [value < 10, 'green'],
-    [value < 100, 'yellow'],
-    [value < 1000, 'orange'],
-    [value < 10000, 'red'],
-  ],
-  'black'
+  [value < 10, 'green'],
+  [value < 100, 'yellow'],
+  [value < 1000, 'orange'],
+  [value < 10000, 'red'],
+  [true, 'black'],
 )
 ```
 

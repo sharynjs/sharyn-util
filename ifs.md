@@ -11,15 +11,15 @@ import ifs from '@sharyn/util/ifs'
 // or import { ifs } from '@sharyn/util'
 
 ifs(
-  [
-    [value < 10, 'green'],
-    [value < 100, 'yellow'],
-    [value < 1000, 'orange'],
-    [value < 10000, 'red'],
-  ],
-  'black'
+  [value < 10, 'green'],
+  [value < 100, 'yellow'],
+  [value < 1000, 'orange'],
+  [value < 10000, 'red'],
+  [true, 'black'],
 )
 ```
+
+Use `true` as the condition to provide a default case.
 
 ## ⚠️ Warning ⚠️
 
@@ -27,11 +27,9 @@ Since the array we are using inside `ifs` is being **declared** there, everythin
 
 ```js
 ifs(
-  [
-    [value < 10, console.log('green')],
-    [value < 100, console.log('yellow')],
-    [value < 1000, console.log('orange')],
-  ]
+  [value < 10, console.log('green')],
+  [value < 100, console.log('yellow')],
+  [value < 1000, console.log('orange')],
 )
 ```
 
@@ -39,11 +37,9 @@ If your cases have side-effects like this, you should wrap them in a `() =>` fun
 
 ```js
 ifs(
-  [
-    [value < 10, () => console.log('green')],
-    [value < 100, () => console.log('yellow')],
-    [value < 1000, () => console.log('orange')],
-  ]
+  [value < 10, () => console.log('green')],
+  [value < 100, () => console.log('yellow')],
+  [value < 1000, () => console.log('orange')],
 )
 ```
 
@@ -51,14 +47,22 @@ Same thing with React components:
 
 ```js
 ifs(
-  [
-    [value < 10, () => <Green />],
-    [value < 100, () => <Yellow />],
-    [value < 1000, () => <Orange />],
-  ]
+  [value < 10, () => <Green />],
+  [value < 100, () => <Yellow />],
+  [value < 1000, () => <Orange />],
 )
 ```
 
 You should only omit the function when your cases are simple primitive values.
+
+And if your conditions are complex, you should also wrap them in functions:
+
+```js
+ifs(
+  [() => superHeavy(), () => <Green />],
+  [() => megaHeavy(), () => <Yellow />],
+  [() => ultraHeavy(), () => <Orange />],
+)
+```
 
 **`ifs`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md)
