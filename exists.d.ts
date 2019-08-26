@@ -1,1 +1,1 @@
-export default function exists(val: any): boolean
+export default function exists(value: any): boolean

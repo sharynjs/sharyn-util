@@ -1,4 +1,4 @@
-export function setGlobal(key: string, val: any): void
+export function setGlobal(key: string, value: any): void
 export function getGlobal(key: string): any
 export function getAllGlobal(): object
 export function deleteGlobal(key: string): void

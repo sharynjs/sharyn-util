@@ -1,3 +1,3 @@
-const exists = val => val != null
+const exists = value => value != null
 
 module.exports = exists

@@ -9,10 +9,10 @@ If the conditions in your cases are always comparing the same value with strict 
 ```js
 ifs(
   [
-    [val < 10, 'green'],
-    [val < 100, 'yellow'],
-    [val < 1000, 'orange'],
-    [val < 10000, 'red'],
+    [value < 10, 'green'],
+    [value < 100, 'yellow'],
+    [value < 1000, 'orange'],
+    [value < 10000, 'red'],
   ],
   'black'
 )
