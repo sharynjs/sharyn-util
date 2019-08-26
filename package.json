@@ -1,6 +1,6 @@
 {
   "name": "@sharyn/util",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "main": "index.js",
   "repository": "https://github.com/sharynjs/sharyn-util",
   "license": "MIT",
