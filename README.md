@@ -117,6 +117,16 @@ toggle(current, 'a', 'b') // if current === 'b', returns 'a'
 toggle(current, 'a', 'b') // if current === 'x', returns 'a'
 ```
 
+## wait
+
+[`wait`](https://github.com/sharynjs/sharyn-util/blob/master/wait.md) is a `Promise`-based delay.
+
+```js
+console.log('Legen - wait for it...')
+await wait(3000)
+console.log('...dary!')
+```
+
 ## Credits
 
 Hey, I am [@verekia](https://github.com/verekia) and this package is part of a library I am developing, [@sharynjs/sharyn](https://github.com/sharynjs/sharyn). The rest of the library is not ready to be used by the community.
