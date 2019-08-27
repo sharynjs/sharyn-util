@@ -106,3 +106,17 @@ swit(
 )
 // returns 'two'
 ```
+
+## toggle
+
+[`toggle`](https://github.com/sharynjs/sharyn-util/blob/master/toggle.md) toggles between two values, and defaults to the first one.
+
+```js
+toggle(current, 'a', 'b') // if current === 'a', returns 'b'
+toggle(current, 'a', 'b') // if current === 'b', returns 'a'
+toggle(current, 'a', 'b') // if current === 'x', returns 'a'
+```
+
+## Credits
+
+Hey, I am [@verekia](https://github.com/verekia) and this package is part of a library I am developing, [@sharynjs/sharyn](https://github.com/sharynjs/sharyn). The rest of the library is not ready to be used by the community.
