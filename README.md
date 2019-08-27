@@ -74,7 +74,7 @@ ifs(
 )
 ```
 
-Make sure you read the [documentation]((https://github.com/sharynjs/sharyn-util/blob/master/ifs.md)) to avoid side-effects.
+Make sure you read the [documentation](https://github.com/sharynjs/sharyn-util/blob/master/ifs.md) to avoid side-effects.
 
 ## run
 
@@ -106,6 +106,8 @@ swit(
 )
 // returns 'two'
 ```
+
+Make sure you read the [documentation](https://github.com/sharynjs/sharyn-util/blob/master/swit.md) to avoid side-effects.
 
 ## toggle
 
