@@ -1,6 +1,6 @@
 ## 🌹 run
 
-**`run`** lets you run some imperative code anywhere. Useful for debugging in declarative code.
+**`run`** lets you run some imperative code anywhere, which can be useful in declarative contexts.
 
 For instance, let's say you have the following React component:
 
@@ -25,6 +25,22 @@ const Cmp = ({ something }) => (
 )
 ```
 
-Use at your own risk!
+### Multiple functions
+
+You can pass multiple functions to **`run`**. Their results get returned as an array.
+
+```js
+run(() => 1, () => 2) // [1, 2]
+```
+
+You may want to use **`run`** if you want to execute multple functions inline without having to introduce a `{}` scope:
+
+```jsx
+const Cmp = () => (
+  <input onChange={e => run(() => handleChange(e), () => updateSomething())} />
+)
+```
+
+Now, whether this is a good practice or not is an other story, but at least you can.
 
 **`run`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md)

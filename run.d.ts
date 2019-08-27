@@ -1,1 +1,1 @@
-export default function run(fn: Function): any
+export default function run(fn: Function, ...functions?: Function[]): any
