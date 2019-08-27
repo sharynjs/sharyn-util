@@ -1,12 +1,24 @@
 const isEqual = require('lodash.isequal')
 
-const swit = (value, cases, defaultCase) => {
-  const foundCase = cases.find(c =>
-    Array.isArray(c[0])
-      ? c[0].some(x => isEqual(x, value))
-      : isEqual(c[0], value)
+const swit = (value, ...cases) => {
+  if (cases.length === 0) {
+    throw Error('swit takes at least 2 parameters')
+  }
+  const lastCase = cases[cases.length - 1]
+
+  let casesToTest
+  let defaultCase
+  if (Array.isArray(lastCase)) {
+    casesToTest = cases
+  } else {
+    casesToTest = cases.slice(0, -1)
+    defaultCase = cases[cases.length - 1]
+  }
+
+  const foundCase = casesToTest.find(c =>
+    c.slice(0, -1).some(x => isEqual(x, value))
   )
-  const caseToUse = foundCase ? foundCase[1] : defaultCase
+  const caseToUse = foundCase ? foundCase[foundCase.length -1] : defaultCase
   return (
     caseToUse && (caseToUse instanceof Function ? caseToUse(value) : caseToUse)
   )

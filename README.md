@@ -89,3 +89,20 @@ const Cmp = ({ something }) => (
   })}></div>
 )
 ```
+
+## swit
+
+**`swit`** is an inline and less verbose `switch`.
+
+```js
+const value = 2
+
+swit(
+  value,
+  [1, 'one'],
+  [2, 'two'],
+  [3, 'three'],
+  'default'
+)
+// returns 'two'
+```
