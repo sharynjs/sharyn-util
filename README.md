@@ -92,7 +92,7 @@ const Cmp = ({ something }) => (
 
 ## swit
 
-**`swit`** is an inline and less verbose `switch`.
+[`swit`](https://github.com/sharynjs/sharyn-util/blob/master/swit.md) is an inline and less verbose `switch`.
 
 ```js
 const value = 2
