@@ -2,6 +2,8 @@
 
 **`run`** lets you run some imperative code anywhere, which can be useful in declarative contexts.
 
+It is the equivalent of a self-calling function.
+
 For instance, let's say you have the following React component:
 
 ```jsx

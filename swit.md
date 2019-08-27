@@ -74,4 +74,8 @@ swit(
 // returns 'combo'
 ```
 
+### Default case
+
+The default case is the last argument that is *not an array*. If you want it to return an array, please wrap it in a `() =>` function.
+
 **`swit`** is part of [`@sharyn/util`](https://github.com/sharynjs/sharyn-util/blob/master/README.md)
