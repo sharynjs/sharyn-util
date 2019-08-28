@@ -129,4 +129,10 @@ await wait(3000)
 console.log('...dary!')
 ```
 
-This package is part of [**@sharynjs/sharyn**](https://github.com/sharynjs/sharyn).
+<hr />
+
+<p align="center">
+  This package is part of <a href="https://github.com/sharynjs/sharyn"><b>@sharynjs/sharyn</b></a>.
+</p>
+
+
