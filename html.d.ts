@@ -1,1 +1,1 @@
-export default function html(strings: string[], ...expressions: any[]): string
+export default function html(strings: TemplateStringsArray, ...expressions: any[]): string
