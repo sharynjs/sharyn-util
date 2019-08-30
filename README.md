@@ -60,6 +60,15 @@ setGlobal('store', store)
 getGlobal('store') // store
 ```
 
+## html
+
+[`html`](https://github.com/sharynjs/sharyn-util/blob/master/html.md) is a template string tag that does nothing at all. It's a normal template string. But your code editor or its [plugins](https://marketplace.visualstudio.com/items?itemName=bierner.lit-html) might support syntax highlighting for HTML when they are marked with an `html` tag.
+
+```js
+const name = 'Sven'
+console.log(html`<div>Hello ${name}</div>`) // Hello Sven
+```
+
 ## ifs
 
 [`ifs`](https://github.com/sharynjs/sharyn-util/blob/master/ifs.md) is a function that does an `if` / `else if` / `else` chain. Since it doesn't have the rigid structure of `if` and `else` statements, you can inline if anywhere in your code.

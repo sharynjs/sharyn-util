@@ -4,6 +4,7 @@ module.exports = {
   defined: require('./defined'),
   either: require('./either'),
   exists: require('./exists'),
+  html: require('./html'),
   ifs: require('./ifs'),
   run: require('./run'),
   swit: require('./swit'),
