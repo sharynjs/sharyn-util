@@ -85,6 +85,14 @@ ifs(
 
 Make sure you read the [documentation](https://github.com/sharynjs/sharyn-util/blob/master/ifs.md) to avoid side-effects.
 
+## inlineThrow
+
+[`inlineThrow`](https://github.com/sharynjs/sharyn-util/blob/master/inlineThrow.md) is a function that `throws` its argument. Unlike a regular `throw`, it's an expression and can be used anywhere.
+
+```js
+const number = isNan(string) ? inlineThrow(Error('Not a number')) : parseInt(string)
+```
+
 ## run
 
 [`run`](https://github.com/sharynjs/sharyn-util/blob/master/run.md) lets you run some imperative code anywhere. Useful for debugging in declarative code.

@@ -6,6 +6,7 @@ module.exports = {
   exists: require('./exists'),
   html: require('./html'),
   ifs: require('./ifs'),
+  inlineThrow: require('./inlineThrow'),
   run: require('./run'),
   swit: require('./swit'),
   toggle: require('./toggle'),
