@@ -87,7 +87,7 @@ Make sure you read the [documentation](https://github.com/sharynjs/sharyn-util/b
 
 ## inlineThrow
 
-[`inlineThrow`](https://github.com/sharynjs/sharyn-util/blob/master/inlineThrow.md) is a function that `throws` its argument. Unlike a regular `throw`, it's an expression and can be used anywhere.
+[`inlineThrow`](https://github.com/sharynjs/sharyn-util/blob/master/inlineThrow.md) is a function that `throw`s its argument. Unlike a regular `throw`, it's an expression and can be used anywhere.
 
 ```js
 const number = isNan(string) ? inlineThrow(Error('Not a number')) : parseInt(string)
