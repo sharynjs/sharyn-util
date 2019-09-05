@@ -9,6 +9,7 @@ module.exports = {
   run: require('./run'),
   swit: require('./swit'),
   toggle: require('./toggle'),
+  tryCatch: require('./tryCatch'),
   wait: require('./wait'),
   getGlobal: require('./global').getGlobal,
   setGlobal: require('./global').setGlobal,

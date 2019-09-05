@@ -128,6 +128,18 @@ toggle(current, 'a', 'b') // if current === 'b', returns 'a'
 toggle(current, 'a', 'b') // if current === 'x', returns 'a'
 ```
 
+## tryCatch
+
+[`tryCatch`](https://github.com/sharynjs/sharyn-util/blob/master/tryCatch.md) is an inline `try` / `catch` / `finally` function, which returns the result of the `try` or `catch` case.
+
+```js
+tryCatch(() => success()) // some result
+tryCatch(() => failure()) // undefined
+tryCatch(() => failure(), err => err) // the error
+tryCatch(() => failure(), () => {}) // undefined
+tryCatch(() => whatever(), () => {}, () => cleanup())
+```
+
 ## wait
 
 [`wait`](https://github.com/sharynjs/sharyn-util/blob/master/wait.md) is a `Promise`-based delay.
