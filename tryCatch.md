@@ -3,6 +3,9 @@
 **`tryCatch`** is an inline `try` / `catch` / `finally` function, which returns the result of the `try` or `catch` case.
 
 ```js
+import tryCatch from '@sharyn/util/tryCatch'
+// or import { tryCatch } from '@sharyn/util'
+
 tryCatch(() => success()) // some result
 tryCatch(() => failure()) // undefined
 tryCatch(() => failure(), err => err) // the error
